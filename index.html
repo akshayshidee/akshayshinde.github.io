@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akshay Shinde - Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshay Shinde | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-gray-100 text-gray-900">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold">Akshay Shinde</h1>
-    <div class="space-x-4">
-      <a href="index.html" class="hover:text-blue-600">Home</a>
-      <a href="about.html" class="hover:text-blue-600">About</a>
-      <a href="projects.html" class="hover:text-blue-600">Projects</a>
-      <a href="blog.html" class="hover:text-blue-600">Blog</a>
-      <a href="contact.html" class="hover:text-blue-600">Contact</a>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Akshay Shinde</a>
+      <div class="navbar-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="#resume">Resume</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="text-center py-16">
-    <h2 class="text-4xl font-bold mb-4">Hi, I'm Akshay 👋</h2>
-    <p class="text-lg max-w-2xl mx-auto">
-      Data Engineer | Python Developer | Writer  
-      I love building data solutions and sharing what I learn.
-    </p>
-    <a href="projects.html" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700">
-      View My Work
-    </a>
-  </section>
+  <header class="text-center py-16">
+    <img src="assets/img/akshay_shinde.jpg" alt="Akshay Shinde" class="w-40 h-40 mx-auto rounded-full shadow-lg mb-6" />
+    <h1 class="text-4xl font-bold">Hi, I’m Akshay 👋</h1>
+    <p class="text-lg text-gray-600 mt-4">Database Engineer | Data Enthusiast | Writer</p>
+  </header>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4 mt-10">
-    <p>&copy; 2025 Akshay Shinde. All rights reserved.</p>
-  </footer>
+  <!-- Resume Section -->
+  <section id="resume" class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">📄 Resume</h2>
+      <p class="text-gray-600 text-lg mb-8 text-center">
+        Download my resume or explore my professional journey below.
+      </p>
+
+      <!-- Resume Download Button -->
+      <div class="flex justify-center mb-10">
+        <a href="assets/resume/Akshay_Shinde_Resume.pdf" target="_blank" class="btn-primary">
+          Download Resume
+        </a>
+      </div>
+
+      <!-- Resume Details -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Education -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-4">🎓 Education</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><strong>B.Tech Computer Science</strong> - XYZ University (2010–2014)</li>
+            <li><strong>Certifications:</strong> AWS, Databricks, PostgreSQL</li>
+          </ul>
+        </div>
+
+        <!-- Experience -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-4">💼 Experience</h3>
+          <ul class="space-y-3 text-gray-700">
+            <li><strong>Database Engineer</strong> - Company A (2018–Present)</li>
+            <li><strong>Software Developer</strong> - Company B (2014–2018)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>

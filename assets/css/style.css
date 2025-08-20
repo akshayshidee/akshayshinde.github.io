@@ -2,3 +2,29 @@
 body {
   scroll-behavior: smooth;
 }
+
+/* Common Navbar Styles */
+.navbar {
+  @apply bg-gray-900 text-white shadow-md;
+}
+
+.navbar-container {
+  @apply max-w-6xl mx-auto flex justify-between items-center py-4 px-6;
+}
+
+.navbar-brand {
+  @apply text-2xl font-bold tracking-wide;
+}
+
+.navbar-links {
+  @apply flex space-x-6;
+}
+
+.navbar-links a {
+  @apply hover:text-blue-400 transition;
+}
+
+/* Custom Buttons */
+.btn-primary {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition;
+}
