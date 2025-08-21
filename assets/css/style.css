@@ -1,30 +1,187 @@
-/* Custom overrides if needed */
+/* General Styles */
 body {
-  scroll-behavior: smooth;
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+  color: #111827; /* Tailwind gray-900 */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Common Navbar Styles */
+/* Navbar styles */
 .navbar {
-  @apply bg-gray-900 text-white shadow-md;
+  background-color: #ffffff; /* white */
+  padding: 1rem;             /* Tailwind p-4 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* shadow-md */
 }
 
 .navbar-container {
-  @apply max-w-6xl mx-auto flex justify-between items-center py-4 px-6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1024px; /* Tailwind max-w-4xl */
+  margin: 0 auto; */
 }
 
 .navbar-brand {
-  @apply text-2xl font-bold tracking-wide;
+  color: #111827;       /* Tailwind gray-900 */
+  font-size: 1.125rem;  /* Tailwind text-lg */
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .navbar-links {
-  @apply flex space-x-6;
+  display: flex;
+  gap: 1.5rem;          /* Tailwind space-x-6 */
 }
 
 .navbar-links a {
-  @apply hover:text-blue-400 transition;
+  color: #111827;       /* Tailwind gray-900 */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 
-/* Custom Buttons */
+.navbar-links a:hover {
+  color: #2563eb; /* Tailwind blue-600 */
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: #4b5563; /* Tailwind gray-600 */
+  margin-top: 1rem;
+}
+
+/* Resume Section */
+.resume {
+  background-color: white;
+  padding: 4rem 1rem;
+}
+
+.resume-container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.resume-heading {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937; /* Tailwind gray-800 */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.resume-text {
+  color: #4b5563; /* Tailwind gray-600 */
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.resume-download {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
 .btn-primary {
-  @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition;
+  background-color: #2563eb; /* Tailwind blue-600 */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* Tailwind blue-700 */
+}
+
+/* Resume Grid */
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .resume-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.resume-card {
+  background-color: #f9fafb; /* Tailwind gray-50 */
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.resume-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.resume-card ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  color: #374151; /* Tailwind gray-700 */
+}
+
+/* General Site Body */
+.site-body {
+  background-color: #f3f4f6; /* Tailwind gray-100 */
+  color: #111827; /* Tailwind gray-900 */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* About Section */
+.about-section {
+  max-width: 768px; /* Tailwind max-w-3xl */
+  margin: 0 auto;
+  padding: 3rem 1.5rem; /* Tailwind py-12 px-6 */
+}
+
+.section-title {
+  font-size: 1.875rem; /* Tailwind text-3xl */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.section-text {
+  margin-bottom: 1rem;
+  color: #374151; /* Tailwind gray-700 */
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: #1f2937; /* Tailwind gray-800 */
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }

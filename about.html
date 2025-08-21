@@ -4,38 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Akshay Shinde</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="site-body">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md p-4 flex justify-between">
-    <a href="index.html" class="font-bold">Akshay Shinde</a>
-    <div class="space-x-4">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">Akshay Shinde</a>
+      <div class="navbar-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#resume">Resume</a>
+      </div>
     </div>
   </nav>
 
   <!-- About Section -->
-  <section class="max-w-3xl mx-auto py-12 px-6">
-    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p class="mb-4">
+  <section class="about-section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
       I'm a Data Engineer with 7+ years of experience in SQL, PostgreSQL, Python, Databricks, and AWS.  
       I enjoy solving data challenges, automating deployments, and mentoring teams.  
     </p>
-    <p class="mb-4">
+    <p class="section-text">
       Apart from tech, I also love writing. I write about productivity, learning, and reflections from my journey.  
     </p>
-    <p>
+    <p class="section-text">
       My goal is to combine my technical skills with creativity to build solutions and share knowledge with others.
     </p>
   </section>
 
-  <footer class="bg-gray-800 text-white text-center py-4">
+  <!-- Footer -->
+  <footer class="footer">
     <p>&copy; 2025 Akshay Shinde. All rights reserved.</p>
   </footer>
 
