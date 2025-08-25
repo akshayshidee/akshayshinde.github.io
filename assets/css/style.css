@@ -19,7 +19,7 @@ body {
   justify-content: space-between;
   align-items: center;
   /* max-width: 1024px; /* Tailwind max-w-4xl */
-  margin: 0 auto; */
+  margin: 0 auto; 
 }
 
 .navbar-brand {
@@ -178,10 +178,55 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
+.site-header {
+  background:  #333;;
+  padding: 1rem;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #333;
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* brand on left, links on right */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Brand (your name) */
+.navbar-brand {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Nav links */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 .footer {
-  background-color: #1f2937; /* Tailwind gray-800 */
-  color: white;
   text-align: center;
+  background: #f1f1f1;
   padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
 }

@@ -5,22 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akshay Shinde | Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/components.js" defer></script>
+  <!-- CSP: extended for Tailwind CDN & Google Fonts -->
+  <!-- <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+                 style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com;
+                 script-src 'self' https://cdn.tailwindcss.com;
+                 font-src 'self' https://fonts.gstatic.com;
+                 img-src 'self' data:;
+                 object-src 'none';"> -->
+
+ 
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-brand">Akshay Shinde</a>
-      <div class="navbar-links">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="#resume">Resume</a>
-      </div>
-    </div>
-  </nav>
+  <!-- <div id="header"></div> -->
+  <div id="navbar"></div>
 
   <!-- Hero Section -->
   <header class="hero">
@@ -33,39 +32,16 @@
   <section id="resume" class="resume">
     <div class="resume-container">
       <h2 class="resume-heading">📄 Resume</h2>
-      <p class="resume-text">
-        Download my resume or explore my professional journey below.
-      </p>
+      <p class="resume-text">Download my resume or explore my professional journey below.</p>
 
-      <!-- Resume Download Button -->
       <div class="resume-download">
         <a href="assets/resume/Akshay_Shinde_Resume.pdf" target="_blank" class="btn-primary">
           Download Resume
         </a>
       </div>
-
-      <!-- Resume Details -->
-      <div class="resume-grid">
-        <!-- Education -->
-        <div class="resume-card">
-          <h3 class="resume-card-title">🎓 Education</h3>
-          <ul>
-            <li><strong>B.Tech Computer Science</strong> - XYZ University (2010–2014)</li>
-            <li><strong>Certifications:</strong> AWS, Databricks, PostgreSQL</li>
-          </ul>
-        </div>
-
-        <!-- Experience -->
-        <div class="resume-card">
-          <h3 class="resume-card-title">💼 Experience</h3>
-          <ul>
-            <li><strong>Database Engineer</strong> - Company A (2018–Present)</li>
-            <li><strong>Software Developer</strong> - Company B (2014–2018)</li>
-          </ul>
-        </div>
-      </div>
     </div>
   </section>
 
+  <div id="footer"></div>
 </body>
 </html>
