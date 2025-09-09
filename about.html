@@ -4,42 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me - Akshay Shinde</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="assets/js/components.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/wordcloud2.js"></script>
 </head>
 <body class="site-body">
   <div id="navbar"></div>
-  <!-- Navbar
-  <nav class="navbar">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-brand">Akshay Shinde</a>
-      <div class="navbar-links">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="index.html#resume">Resume</a>
-      </div>
-    </div>
-  </nav> -->
+<section class="about-section relative py-16 bg-white">
+  <div class="flex flex-col md:flex-row items-center gap-12 px-8 md:px-20 lg:px-32">
 
-  <!-- About Section -->
-  <section class="about-section">
-    <h2 class="section-title">About Me</h2>
-    <p class="section-text">
-      I'm a Data Engineer with 7+ years of experience in SQL, PostgreSQL, Python, Databricks, and AWS.  
-      I enjoy solving data challenges, automating deployments, and mentoring teams.  
-    </p>
-    <p class="section-text">
-      Apart from tech, I also love writing. I write about productivity, learning, and reflections from my journey.  
-    </p>
-    <p class="section-text">
-      My goal is to combine my technical skills with creativity to build solutions and share knowledge with others.
-    </p>
+    <!-- Left: Profile Image with Pattern -->
+    <div class="relative w-64 h-64 flex-shrink-0">
+      <div class="pattern-bg"></div>
+      <img src="assets/images/akshay_shinde.jpg" alt="Akshay Shinde" 
+           class="rounded-full shadow-xl w-full h-full object-cover z-10 relative profile-frame">
+    </div>
+
+    <!-- Right: Text Content -->
+   <div class="flex-1 text-left max-w-3xl">
+ <div class="flex items-baseline space-x-2">
+    <p class="text-lg font-light text-[#555]">Hi, I’m</p>
+    <h1 class="text-5xl md:text-6xl font-extrabold text-[#333] leading-tight">
+      Akshay Shinde
+    </h1>
+  </div>
+
+  <h3 class="text-xl md:text-xl font-medium text-[#555]  mt-3 mb-6">
+    Database Developer • Data Engineer • Tech Curious
+  </h3>
+
+  <p class="text-gray-700 text-base md:text-lg mb-4 leading-relaxed">
+    👨‍💻 <strong class="text-[#555] ">7+ years</strong> designing relational databases, optimizing ETL pipelines,
+    and operating production-scale data systems. Skilled in 
+    SQL Server, PostgreSQL, Python, Databricks, AWS, 
+    I help teams cut costs, boost performance, and scale reliably.
+  </p>
+
+  <p class="text-gray-600 text-base md:text-lg mb-4 leading-relaxed">
+    🌐 Passionate about <strong class="text-[#555] ">Data, Cloud, and AI</strong>, and curious about how 
+    AR/VR and IoT solve real-world problems.
+  </p>
+
+  <p class="text-gray-900 text-base md:text-lg mb-4 leading-relaxed">
+    ✍️ Beyond engineering, I write about practical data applications. Books are my escape when not exploring 
+    10+ cities & 7 states.  
+    ☕ No coffee needed—just meaningful conversations.
+  </p>
+    <a href="contact.html" 
+     class="inline-block px-6 py-3 rounded-xl bg-[#333] text-white font-semibold text-lg shadow-md hover:bg-[#444] transition duration-300 ease-in-out">
+     📩 Connect with Me</a>
+</div>
+
+  
+  </div>
+
+  <!-- Word Cloud Section
+    <h3 class="text-2xl font-semibold text-gray-500 mb-6">My Tech Stack</h3>
+    <canvas id="wordCloudCanvas" class="mx-auto w-full max-w-4xl h-[500px]"></canvas>
   </section>
+
+ Load WordCloud library FIRST -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.2/wordcloud2.min.js"></script> -->
+
+
+<!-- Then load your custom JS -->
+<!-- <script src="assets/js/about.js"></script> -->
+</section>
+
+
 
   <!-- Footer -->
   <div id="footer"></div>
-
 </body>
 </html>

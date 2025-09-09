@@ -7,44 +7,6 @@ body {
   padding: 0;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #ffffff; /* white */
-  padding: 1rem;             /* Tailwind p-4 */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* shadow-md */
-}
-
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* max-width: 1024px; /* Tailwind max-w-4xl */
-  margin: 0 auto; 
-}
-
-.navbar-brand {
-  color: #111827;       /* Tailwind gray-900 */
-  font-size: 1.125rem;  /* Tailwind text-lg */
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 1.5rem;          /* Tailwind space-x-6 */
-}
-
-.navbar-links a {
-  color: #111827;       /* Tailwind gray-900 */
-  text-decoration: none;
-  transition: color 0.2s ease-in-out;
-}
-
-.navbar-links a:hover {
-  color: #2563eb; /* Tailwind blue-600 */
-}
-
-
 /* Hero Section */
 .hero {
   text-align: center;
@@ -160,9 +122,10 @@ body {
 
 /* About Section */
 .about-section {
-  max-width: 768px; /* Tailwind max-w-3xl */
+  background-color: white; /* match resume */
+  padding: 4rem 1rem; /* same as resume */
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 3rem 1.5rem; /* Tailwind py-12 px-6 */
 }
 
 .section-title {
@@ -230,3 +193,89 @@ body {
   font-size: 0.9rem;
   color: #555;
 }
+
+.about-section {
+  padding: 60px 20px;
+  background: #f9fafb; /* soft background */
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.about-section .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #333;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  border: 4px solid #fff;
+   margin-bottom: 1.5rem;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.section-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* 🔵 Decorative pulse around image */
+@keyframes borderPulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.6); }
+  70% { box-shadow: 0 0 0 20px rgba(37, 99, 235, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+.profile-frame {
+  animation: borderPulse 2s infinite;
+  border-radius: 50%;
+}
+
+/* ✨ Subtle geometric pattern behind image */
+.pattern-bg {
+  background-image: radial-gradient(rgba(37, 99, 235, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+  position: absolute;
+  inset: -40px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* ☁️ Word Cloud feel */
+.word-cloud span {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.word-cloud span:hover {
+  transform: scale(1.2);
+  color: #2563eb; /* Tailwind blue-600 */
+}
+
+/* 📱 Responsive tweak */
+@media (max-width: 768px) {
+  .about-section h1 { font-size: 2rem; }
+  .about-section h3 { font-size: 1.1rem; }
+}
+

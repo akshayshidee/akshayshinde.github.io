@@ -3,49 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Akshay Shinde</title>
+  <title>Contact Me</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <script src="assets/js/components.js" defer></script>
+   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="bg-gray-100 font-sans text-gray-900">
-  <div id="navbar"></div>
+<body class="bg-gray-100 font-sans">
+
   <!-- Navbar -->
-  <!-- <nav class="navbar">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-brand">Akshay Shinde</a>
-      <div class="navbar-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-        <a href="#resume">Resume</a>
-      </div>
-    </div>
-  </nav> -->
+ <div id="navbar"></div>
 
   <!-- Contact Section -->
-  <section class="max-w-xl mx-auto py-12 px-6">
-    <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
-    <form class="bg-white shadow-md rounded-lg p-6 space-y-4">
-      <input type="text" placeholder="Your Name" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 outline-none">
-      <input type="email" placeholder="Your Email" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 outline-none">
-      <textarea placeholder="Your Message" rows="5" class="w-full border p-2 rounded focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg shadow hover:bg-blue-700 transition">
-        Send
+<section class="flex flex-col md:flex-row h-screen">
+  
+  <!-- Left Side (Contact Info + Socials) -->
+  <div class="w-full md:w-1/2 min-h-screen flex justify-end bg-white px-12">
+    <!-- Inner container (keeps vertical center) -->
+    <div class="flex flex-col justify-center items-start space-y-6 max-w-md">
+      
+      <!-- Contact Box -->
+      <div class="bg-gray-50 border-b-4 border-[#333] p-6 w-full relative z-0">
+        <h2 class="text-5xl font-extrabold text-[#333] mb-6">
+          Contact <span class="text-[#777]">Me</span>
+        </h2>
+        <br>
+        <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+          <span class="font-semibold text-[#333]">
+            I read all my messages carefully. Share something valuable or meaningful, and I’ll make sure to reply.
+          </span>
+          <br><br><br>
+          <span class="font-semibold text-[#666]">
+            You’ll need to share your <strong class="text-[#333]">Name</strong> and <strong class="text-[#333]">Email</strong> so I can respond.
+          </span>
+        </p>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="flex items-center space-x-4">
+        <!-- Label -->
+        <p class="text-[#555] font-semibold whitespace-nowrap">
+          Social media <br> Connect with me:
+        </p>
+
+        <!-- Icons -->
+        <div class="flex space-x-4">
+          <!-- Email -->
+          <a href="mailto:shindeakshay285@gmail.com" class="text-[#333] text-2xl hover:text-red-600">
+            <i class="fas fa-envelope"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/akshay-shinde-410bb5101" target="_blank" class="text-[#333] text-2xl hover:text-blue-600">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/akshayshidee" target="_blank" class="text-[#333] text-2xl hover:text-gray-800">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Side (Contact Form) -->
+  <div class="w-full md:w-1/2 bg-[#333] flex items-center justify-center px-12 py-12">
+    <form class="bg-white rounded-xl shadow-lg p-8 w-full max-w-lg">
+      <h3 class="text-2xl font-bold text-[#333] mb-6">Send Me A Message</h3>
+      
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+        <input type="text" id="name" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+      </div>
+      
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+        <input type="email" id="email" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+      </div>
+
+      <div class="mb-4">
+        <label for="subject" class="block text-gray-700 font-semibold mb-2">Subject</label>
+        <input type="text" id="subject" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
+      </div>
+
+      <div class="mb-6">
+        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+        <textarea id="message" rows="4" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
+      </div>
+
+      <button type="submit" class="w-full bg-[#333] text-white font-bold py-3 rounded-lg hover:bg-[#444] transition">
+        Send Message
       </button>
     </form>
-    <p class="mt-6 text-gray-600">
-      Or email me directly at 
-      <a href="mailto:shidneakshay285@gmail.com" class="text-blue-600 hover:underline">shidneakshay285@gmail.com</a>
-    </p>
-  </section>
-
-  <!-- Footer -->
-  <!-- <footer class="bg-gray-800 text-white text-center py-4">
-    <p>&copy; 2025 Akshay Shinde. All rights reserved.</p>
-  </footer> -->
+  </div>
+</section>
 
   <div id="footer"></div>
 </body>
